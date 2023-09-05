@@ -1,0 +1,23 @@
+.mainText {
+  color:rgb(231, 243, 253);
+  font-size: 10rem;
+  animation: uk-text-shadow-glitch .35s cubic-bezier(.25, .46, .45, .9399999999999999) both infinite;
+}
+
+@keyframes uk-text-shadow-glitch {
+  0% {
+    text-shadow: none
+  }
+  25% {
+    text-shadow: -3px -3px 0 #eb055a, 3px 3px 0 #4632f0
+  }
+  50% {
+    text-shadow: 3px -3px 0 #eb055a, -3px 3px 0 #4632f0
+  }
+  75% {
+    text-shadow: -3px 3px 0 #eb055a, 3px -3px 0 #4632f0
+  }
+  100% {
+    text-shadow: 3px 3px 0 #eb055a, -3px -3px 0 #4632f0
+  }
+}
