@@ -13,7 +13,7 @@ const handler = async (req, res) => {
   }
 
   try {
-    const { 'my-url': myUrl } = JSON.parse(req.body);
+    const { 'URL': myUrl } = JSON.parse(req.body);
 
     const response = await axios.get(myUrl);
 
